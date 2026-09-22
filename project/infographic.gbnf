@@ -1,0 +1,20 @@
+root ::= "{" ws "\"title\"" ws ":" ws str "," ws "\"subtitle\"" ws ":" ws str "," ws "\"layout\"" ws ":" ws layout "," ws "\"stats\"" ws ":" ws stats "," ws "\"elements\"" ws ":" ws elements "," ws "\"connectors\"" ws ":" ws connectors "," ws "\"footer\"" ws ":" ws str ws "}"
+
+layout ::= "\"flow\"" | "\"timeline\"" | "\"grid\"" | "\"two_column\"" | "\"centered\"" | "\"hub_and_spoke\"" | "\"stacked\"" | "\"comparison\""
+shape ::= "\"rectangle\"" | "\"rounded_rectangle\"" | "\"circle\"" | "\"diamond\"" | "\"hexagon\"" | "\"pill\""
+icon ::= "\"clock\"" | "\"shield\"" | "\"code\"" | "\"user\"" | "\"database\"" | "\"server\"" | "\"api\"" | "\"cloud\""
+size ::= "\"small\"" | "\"medium\"" | "\"large\""
+emphasis ::= "\"normal\"" | "\"primary\"" | "\"highlighted\"" | "\"secondary\""
+conntype ::= "\"none\"" | "\"line\"" | "\"arrow\"" | "\"dashed_arrow\""
+
+stats ::= "[" ws "]" | "[" ws stat ("," ws stat)* ws "]"
+stat ::= "{" ws "\"label\"" ws ":" ws str "," ws "\"value\"" ws ":" ws str ws "}"
+
+elements ::= "[" ws element ("," ws element)* ws "]"
+element ::= "{" ws "\"id\"" ws ":" ws str "," ws "\"title\"" ws ":" ws str "," ws "\"text\"" ws ":" ws str "," ws "\"shape\"" ws ":" ws shape "," ws "\"icon\"" ws ":" ws icon "," ws "\"size\"" ws ":" ws size "," ws "\"emphasis\"" ws ":" ws emphasis ws "}"
+
+connectors ::= "[" ws "]" | "[" ws conn ("," ws conn)* ws "]"
+conn ::= "{" ws "\"from\"" ws ":" ws str "," ws "\"to\"" ws ":" ws str "," ws "\"type\"" ws ":" ws conntype ws "}"
+
+str ::= "\"" [^"\\]* "\""
+ws ::= [ \t\n\r]*

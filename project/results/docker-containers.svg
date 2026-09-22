@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+  <defs>
+    <filter id="card-shadow" x="-10%" y="-10%" width="125%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#0F172A" flood-opacity="0.06"/>
+    </filter>
+    <filter id="card-shadow-hover" x="-10%" y="-10%" width="125%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0F172A" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="grad-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EDF2F7"/>
+    </linearGradient>
+    <linearGradient id="grad-primary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <linearGradient id="grad-highlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="9" markerHeight="7" refX="7" refY="3.5" orient="auto"><polygon points="0 0, 9 3.5, 0 7" fill="#64748B"/></marker>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grad-bg)" />
+  <rect x="0" y="0" width="100%" height="4" fill="#3B82F6" />
+  <text x="800.0" y="76.0" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="38" font-weight="700" fill="#1E293B" text-anchor="middle" letter-spacing="-0.5">Docker Containers</text>
+  <text x="800.0" y="106.0" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="18" font-weight="400" fill="#475569" text-anchor="middle">A Brief Overview</text>
+  <rect x="450.0" y="147.5" width="220.0" height="58.0" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#card-shadow)" />
+  <text x="560.0" y="173.5" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="22" font-weight="700" fill="#2563EB" text-anchor="middle">100+</text>
+  <text x="560.0" y="193.5" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="600" fill="#475569" text-anchor="middle" letter-spacing="0.5">Containers</text>
+  <rect x="690.0" y="147.5" width="220.0" height="58.0" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#card-shadow)" />
+  <text x="800.0" y="173.5" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="22" font-weight="700" fill="#2563EB" text-anchor="middle">500+</text>
+  <text x="800.0" y="193.5" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="600" fill="#475569" text-anchor="middle" letter-spacing="0.5">Images</text>
+  <rect x="930.0" y="147.5" width="220.0" height="58.0" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#card-shadow)" />
+  <text x="1040.0" y="173.5" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="22" font-weight="700" fill="#2563EB" text-anchor="middle">10M+</text>
+  <text x="1040.0" y="193.5" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="600" fill="#475569" text-anchor="middle" letter-spacing="0.5">Docker Hub</text>
+  <g id="connectors">
+    <circle cx="689.5" cy="575.0" r="3.5" fill="#64748B"/>
+    <line x1="689.5" y1="575.0" x2="721.5" y2="575.0" stroke="#94A3B8" stroke-width="2"  marker-end="url(#arrowhead)" />
+    <circle cx="909.5" cy="575.0" r="3.5" fill="#64748B"/>
+    <line x1="909.5" y1="575.0" x2="941.5" y2="575.0" stroke="#94A3B8" stroke-width="2"  marker-end="url(#arrowhead)" />
+  </g>
+  <g id="elements">
+  <g id="element-container">
+    <rect x="505.5" y="492.1" width="180.0" height="165.9" rx="6" fill="url(#grad-primary)" stroke="#1D4ED8" stroke-width="1.5" filter="url(#card-shadow-hover)"/>
+    <g transform="translate(583.5, 533.0) scale(1.000)"><polyline points="16 18 22 12 16 6" fill="none" stroke="#FFFFFF" stroke-width="2"/><polyline points="8 6 2 12 8 18" fill="none" stroke="#FFFFFF" stroke-width="2"/></g>
+    <text x="595.5" y="574.5" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">Container</text>
+    <text x="595.5" y="596.0" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="400" fill="rgba(255, 255, 255, 0.92)" text-anchor="middle">A lightweight, standalone</text>
+    <text x="595.5" y="611.0" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="400" fill="rgba(255, 255, 255, 0.92)" text-anchor="middle">runtime environment</text>
+  </g>
+  <g id="element-image">
+    <rect x="725.5" y="500.4" width="180.0" height="149.1" rx="6" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5" filter="url(#card-shadow)"/>
+    <g transform="translate(803.5, 533.0) scale(1.000)"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="none" stroke="#64748B" stroke-width="2"/></g>
+    <text x="815.5" y="574.5" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="14" font-weight="700" fill="#1E293B" text-anchor="middle">Image</text>
+    <text x="815.5" y="596.0" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">A template for creating</text>
+    <text x="815.5" y="611.0" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">containers</text>
+  </g>
+  <g id="element-hub">
+    <circle cx="1020.0" cy="575.0" r="74.5" fill="url(#grad-highlight)" stroke="#B45309" stroke-width="1.5" filter="url(#card-shadow-hover)"/>
+    <g transform="translate(1008.0, 533.0) scale(1.000)"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" fill="none" stroke="#FFFFFF" stroke-width="2"/></g>
+    <text x="1020.0" y="574.5" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">Docker Hub</text>
+    <text x="1020.0" y="596.0" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="400" fill="rgba(255, 255, 255, 0.92)" text-anchor="middle">A repository for</text>
+    <text x="1020.0" y="611.0" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="400" fill="rgba(255, 255, 255, 0.92)" text-anchor="middle">sharing images</text>
+  </g>
+  </g>
+  <text x="800.0" y="942.5" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="12" fill="#94A3B8" text-anchor="middle">Learn more about Docker containers at [Docker Hub](https://hub.docker.com/)</text>
+</svg>
